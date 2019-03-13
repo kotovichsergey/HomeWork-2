@@ -1,111 +1,109 @@
 body {
     margin: 0;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif
 }
 .container {
+    display: block;
     width: 500px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10%;
     margin: 40px auto;
-    padding: 10px;
+    padding: 10px
 }
 h3:first-child {
-    text-align: center;
+    text-align: center
+}
+h3 {
+    border-bottom: 2px solid;
+    padding-bottom: 5px
 }
 .deleteAll {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .deleteList,
 .deleteAll {
     display: none
 }
+h3:last-of-type {
+    margin-top: 0;
+    border: none
+}
 ul:not(:empty) ~ .deleteAll,
 ul:not(:empty) ~ .deleteList {
-    display: inline-block;
-}
-
-h3 {
-    border-bottom: 2px solid;
-    padding-bottom: 12px;
+    display: inline-block
 }
 .deleteList {
-    margin-left: 157px;
-
-}
-
-input {
-    width: 355px;
-    height: 20px;
-    border: 2px solid;
-}
-#new-text{
-    margin-left: 68px;
+    margin-left: 137px;
+    font-size: 22px
 }
 #add {
     width: 117px;
     border: 1px solid #444;
     border-radius: 6%;
     height: 30px;
+    vertical-align: bottom;
     color: black;
-    font-weight: 400;
+    background-color: #20B2AA;
     font-size: 18px;
-    margin-left: 3%;
+    margin-left: 3%
+}
+input {
+    width: 355px;
+    height: 26px;
+    border: 1px solid;
+    padding-left: 5px
 }
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0
+}
+li {
+    padding: 10px 0
+}
+li .icons {    
+    float: right
+}
+li .icons:first-child {
+    float: none
 }
 li:nth-child(3n) {
     color: red;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif
 }
 li:nth-child(3n) label {
-    background-color: yellow;
+    background-color: yellow
 }
-li {
-    height: 50px;
-    position: relative;
-}
-label {
+li label {
+    display: inline-block;
     font-weight: bold;
-}
-li input {
-    display: none;
-}
-.checkbox {
-    border: 0;
-    background: white;
-}
-.fa-angle-down {
-    font-size: 20px;
+    margin-left: 3px;
+    width: 76%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    height: 20px;
+    padding: 2px 3px 0
 }
 .icons {
     border: 0;
     background: white;
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: 20px
 }
-.editMode input {
-    display: inline;
-    width: 77%;
-    border: 0;
+.save {
+    margin-right: 4px;
+    font-size: 22px
 }
+li input,
 .editMode label {
     display: none;
 }
-.edit {
-    position: absolute;
-    right: 9%;
-}
-
-.delete {
-    position: absolute;
-    right: 3%;
-}
-.save {
-    position: absolute;
-    right: 10%;
-    bottom: 25px;
+.editMode input {
+    display: inline-block;
+    width: 77%;
+    font-size: 17px;
+    border: .1px solid #eee;
+    height: 20px;
+    vertical-align: bottom
 }
 #finished label, 
 #finished input, 
@@ -115,5 +113,10 @@ li input {
 #finished label {
     text-decoration: line-through;
 }
+
+
+
+
+
 
 

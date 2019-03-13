@@ -10,14 +10,14 @@
 		<div id="root">
 			<div class="container">
 				<h3>Добавить дело</h3>
-				<input id="new-task" type="text">
+				<input id="new-task" type="text" autofocus>
 				<button id="add">Добавить</button>
 				<h3>Список дел</h3>
 				<ul id="unfinished"></ul>
 				<h3>Список завершённых дел</h3>
 				<ul id="finished"></ul>
-				<label class="deleteList">Очистить все списки</label>
-				<button class="icons deleteAll" onclick="deleteAllList()"><i class="fas fa-trash-restore-alt"></i></button>
+				<h3 class="deleteList">Очистить все списки</h3>
+				<button id="delete" class="icons deleteAll"><i class="fas fa-trash-restore-alt"></i></button>
 			</div>
 		</div>
 		<script src="JS/to-do-list.js"></script>
